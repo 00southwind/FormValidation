@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/formcheck.js"></script>
+</head>
+<body>
+    <div class="box">
+        <h3 class="title">在线报名表</h3>
+    
+        <div class="form">
+            <form name="form" action="" method="post" onsubmit="return checkForm()">
+                <p>
+                    <label for="name" class="bt">姓名：</label> 
+                    <input type="text" name="user" onfocus="focus_user()" onblur="blur_user()">
+                    <span id="result_user"></span> 
+                </p>
+                
+                <p>
+                    <label for="sex">性别：</label>
+                    <input type="radio" name='sex' value="男"> 男
+                    <input type="radio" name='sex' value="女"> 女
+                </p>
+
+                <p>
+                    <label for="age" class="bt">年龄：</label>
+                    <input type="text" name="age" onfocus="focus_age()" onblur="blur_age()">
+                    <span id="result_age"></span>
+                </p>
+
+                <p>
+                    <label for="card" class="bt">身份证号：</label>
+                    <input type="text" name="ID" onfocus="focus_ID()" onblur="blur_ID()">
+                    <span id="result_ID"></span>
+                </p>
+
+                <p>
+                    <label for="job">职业状况：</label>
+                    <input type="radio" name='job' value="在职"> 在职
+                    <input type="radio" name='job' value="待业"> 待业
+                    <input type="radio" name='job' value="学生"> 学生
+                </p>
+
+                <p>
+                    <label for="tel" class="bt">固定电话：</label>
+                    <input type="text" name="tel" onfocus="focus_tel()" onblur="blur_tel()">
+                    <span id="result_tel"></span>
+                </p>
+
+                <p>
+                    <label for="phone" class="bt">手机：</label>
+                    <input type="text" name="phone" onfocus="focus_phone()" onblur="blur_phone()">
+                    <span id="result_phone"></span>
+                </p>
+
+                <p>
+                    <label for="qq" class="bt">QQ：</label>
+                    <input type="text" name="qq" onfocus="focus_qq()" onblur="blur_qq()">
+                    <span id="result_qq"></span>
+                </p>
+
+                <p>
+                    <label for="email" class="bt">邮箱：</label>
+                    <input type="text" name="email" onfocus="focus_email()" onblur="blur_email()">
+                    <span id="result_email"></span>
+                </p>
+
+                <p>
+                    <label for="add">现居住地：</label>
+                    <input type="text" name="address" style="width:300px;">
+                </p>
+
+                <p>
+                    <label for="postcode" class="bt">邮政编码：</label>
+                    <input type="text" name="postcode" onfocus="focus_postcode()" onblur="blur_postcode()">
+                    <span id="result_postcode"></span>
+                </p>
+
+                <p>
+                    <label for="message">留言：</label>
+                    <textarea cols="40" ></textarea>
+                </p>
+
+                <p style="padding-left:82px;">
+                   <input type="submit" name="submit" value="确定" style="width:102px;height:25px;"> 
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
